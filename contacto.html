@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contáctame</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- Estilo general ---------- */
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: url(./images/fondo-sobre.jpg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 1rem;
+      background-size: cover;
+      height: 100vh;
+    }
+
+    form {
+      background: #fff;
+      padding: 2.5rem 2rem;
+      border-radius: 16px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 420px;
+      text-align: left;
+      box-sizing: border-box;
+    }
+
+    h2 {
+      text-align: center;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 1.8rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.4rem;
+      font-weight: 600;
+      color: #333;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.7rem 0.9rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.95rem;
+      box-sizing: border-box;
+      display: block;
+      margin: 0 auto 1.2rem auto;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+
+    button {
+      display: block;
+      margin: 0 auto;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 0.6rem 2rem; /* más ancho que alto */
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.1s ease;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    button:active {
+      transform: scale(0.98);
+    }
+
+    /* ---------- Versión responsive ---------- */
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+
+      form {
+        padding: 2rem 1.5rem;
+        max-width: 100%;
+      }
+
+      input,
+      textarea {
+        font-size: 1rem;
+      }
+
+      button {
+        width: 100%;              /* botón ocupa ancho completo en móvil */
+        padding: 0.8rem 0;
+        font-size: 1.05rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <form action="https://formspree.io/f/mzzkrrdy" method="POST">
+    <h2>Contáctame</h2>
+
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+
+    <label for="email">Correo:</label>
+    <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+
+    <label for="phone">Teléfono:</label>
+    <input type="tel" id="phone" name="phone" placeholder="+593 999 999 999" pattern="[0-9+ ]+" required>
+
+    <label for="message">Mensaje o pregunta:</label>
+    <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>

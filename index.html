@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Carlos Capecchi</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <meta name="viewport" content="width=device-width, user-scaleable=no">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="contenedor">
+                <div class="menu">
+                    <a href="./index.html">
+                    <img class="logo" src="./images/logo capecchi fondo transparente-01.png" alt="logo-profesional-carlos">
+                    </a>
+                    <nav>
+                        <ul class="menu-list">
+                            <li class="menu.btn"><a class="menu-btn-link" href="./sobremi.html">Sobre mi</a></li>
+                            <li class="menu.btn"><a class="menu-btn-link" href="./servicios.html">Servicios</a></li>
+                            <li class="menu.btn"><a class="menu-btn-link" href="./blog.html">Blog</a></li>
+                            <li class="menu.btn"><a class="menu-btn-link" href="./contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            
+            <div class="titular">
+                <h1>Carlos Capecchi</h1>
+                <h2>Psicólogo Clínico - Psicoterapeuta - Sexólogo Clínico</h2>
+                <a class="saber-mas" href="./sobremi.html">Saber más</a>
+            </div>
+        </header>
+
+        <section class="contact-section">
+            <div class="contact-container">
+                
+    <!-- FORMULARIO, BLOQUE IZQUIERDO -->
+                <div class="contact-form">
+                    <h2>Contáctame</h2>
+                    <form id="contactForm" action="https://formspree.io/f/mzzkrrdy" method="post">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Tu número de teléfono" required>
+
+                        <label for="correo">Correo:</label>
+                        <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required>
+
+                        <label for="mensaje">Mensaje o pregunta:</label>
+                        <input id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></input>
+
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+
+    <!-- FRASE INFORMATIVA, BLOQUE DERECHO -->
+                <div class="contact-info">
+                    <hr />
+                <h3>“Cuidar la mente y el cuerpo es un acto de amor propio. La salud mental y la salud sexual son pilares del bienestar integral; buscar ayuda profesional no es signo de debilidad, sino de valentía y compromiso con uno mismo.”</h3>
+                <hr />
+                </div>
+            </div>
+        </section>
+
+<!-- SECCIÓN DE SERVICIOS -->
+<section class="sec-serv">
+    <div class="contenedor-servicios">
+        <h4>Servicios</h4>
+        <div class="cajas-servicios">
+            <div class="servicio oscuro">
+                <h5>Psicoterapia Individual</h5>
+                <hr />
+                <p class="parrafo-serv">Un espacio de acompañamiento profesional para explorar tus emociones, pensamientos y comportamientos. A través del proceso terapéutico podrás fortalecer tus recursos personales, afrontar situaciones difíciles y mejorar tu bienestar emocional.</p>
+                <img class="icono-servicios" src="./images/Therapy.png">
+            </div>
+            
+            <div class="servicio claro">
+                <h5>Evaluación Psicológica</h5>
+                <hr />
+                <p class="parrafo-serv">Un proceso riguroso y confidencial que permite comprender el funcionamiento emocional, cognitivo y conductual de la persona. Se utilizan pruebas estandarizadas para orientar diagnósticos, tratamientos o decisiones personales y laborales.</p>
+                <img class="icono-servicios" src="./images/Assessment.png">
+            </div>
+
+            <div class="servicio oscuro">
+                <h5>Terapia de Pareja</h5>
+                <hr />
+                <p class="parrafo-serv">Un espacio de diálogo guiado donde ambos miembros de la pareja pueden reencontrarse, mejorar la comunicación y reconstruir la confianza. El objetivo es promover vínculos más saludables y una convivencia basada en el respeto mutuo.</p>
+                <img class="icono-servicios" src="./images/Couple.png">
+            </div>
+
+            <div class="servicio claro">
+                <h5>Terapia Sexual</h5>
+                <hr />
+                <p class="parrafo-serv">Dirigida a personas o parejas que enfrentan dificultades en su vida sexual. Se abordan temas como deseo, disfunciones o insatisfacción, favoreciendo una sexualidad más plena, libre de tabúes y conectada con el bienestar integral.</p>
+                <img class="icono-servicios" src="./images/Sex.png">
+            </div>
+
+            <div class="servicio oscuro">
+                <h5>Psicodiagnóstico Infanto-Juvenil</h5>
+                <hr />
+                <p class="parrafo-serv">Evaluación especializada que busca comprender el desarrollo emocional, cognitivo y social de niños y adolescentes. Permite detectar dificultades, orientar intervenciones y acompañar a las familias en el proceso de crecimiento.</p>
+                <img class="icono-servicios" src="./images/kids.png">
+            </div>
+
+            <div class="servicio claro">
+                <h5>Asesoría Empresarial</h5>
+                <hr />
+                <p class="parrafo-serv">Servicio enfocado en el bienestar psicológico y el clima laboral dentro de las organizaciones. A través de la evaluación y orientación profesional, se promueve la productividad, la comunicación efectiva y la salud mental en el trabajo.</p>
+                <img class="icono-servicios" src="./images/Counselling.png">
+            </div>
+        </div>    
+    </div>
+</section>
+
+<!-- COMIENZA EL BLOG  -->
+<section id="blog">
+    <div class="contenedor-blog">
+        <h4>Blog</h4>
+        <div class="contenedor-publicaciones">
+            <div class="publicaciones">
+                <img src="./images/pareja-toxica.jpg">
+                <h5>¿Cómo son las parejas tóxicas?</h5>
+                <p class="parrafo-blog">Las relaciones tóxicas no siempre comienzan siendo evidentes; muchas veces se disfrazan de amor intenso o dependencia emocional.</p>
+                <a class="leer-mas">Leer más</a>
+            </div>
+
+            <div class="publicaciones">
+                <img src="./images/narcisism.jpg">
+                <h5>Los peligros del narcisismo</h5>
+                <p class="parrafo-blog">El narcisismo va mucho más allá del amor propio: puede convertirse en una forma de relación que gira en torno al poder, la manipulación y la falta de empatía.</p>
+                <a class="leer-mas">Leer más</a>
+            </div>
+
+            <div class="publicaciones">
+                <img src="./images/grief.png">
+                <h5>Comprendiendo el duelo</h5>
+                <p class="parrafo-blog">El duelo no solo implica perder a alguien, sino también aprender a reconstruirse entre el dolor, la ausencia y la transformación interior.</p>
+                <a class="leer-mas">Leer más</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECCIÓN DE FOOTER -->
+<section id="footer">
+    <div class="contenedor-footer">
+        <h4>Pedir ayuda es el primer paso para el cambio</h4>
+        <a class="footer-btn" href="./contacto.html">Contáctame</a>
+    </div>
+</section>
+
+<section id="whatsapp">
+    <a href="https://wa.me/593939283303">
+        <img class="whatsapp-icon" src="./images/WhatsApp.png">
+    </a>
+</section>
+
+    </body>
+</html>
